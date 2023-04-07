@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
 :root {
   --font-small: 1.2rem;
-  --font-medium: 1.4rem;
-  --font-laarge: 1.6rem;
+  --font-medium: 1.8rem;
+  --font-laarge: 3rem;
   --color-prymary: #47cfac;
 }
 
 body {
+  font-family: "Roboto Mono", monospace;
   margin: 0;
   padding: 0;
   position: fixed;
@@ -43,4 +46,68 @@ header .header-icons-container .icons {
 }
 header .icons span {
   color: white;
+  border-radius: 100%;
+}
+header .icons span:hover {
+  color: rgb(48, 48, 48);
+  box-shadow: 0px 2px 8px rgba(89, 73, 30, 0.56);
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+}
+nav .nav-logo-container {
+  margin-left: 50px;
+}
+nav .nav-logo-container img {
+  width: 220px;
+  margin-top: 10px;
+}
+nav .profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+nav .profile-link a {
+  font-size: var(--font-medium);
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.main-container {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/img/Cover.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main-container h2 {
+  padding: 0px 30px;
+  font-size: var(--font-laarge);
+  color: aliceblue;
+}
+.main-container-button {
+  font-size: var(--font-medium);
+  font-weight: bold;
+  user-select: pointer;
+  width: 160px;
+  height: 50px;
+  margin-top: 50px;
+  border-style: double;
+  border-color: aliceblue;
+  border-radius: 16px;
+  background-color: var(--color-prymary);
+  cursor: pointer;
+}
+
+.main-container-button:hover {
+  box-shadow: 0px 2px 8px rgb(255, 255, 255);
 }
