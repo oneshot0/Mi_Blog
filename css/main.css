@@ -3,7 +3,7 @@
 :root {
   --font-small: 1rem;
   --font-medium: 1.8rem;
-  --font-laarge: 3rem;
+  --font-large: 3rem;
   --color-prymary: #47cfac;
   --color-secondary: #e6e9ed;
   --color-fondo: #22272d;
@@ -101,7 +101,7 @@ nav .profile-link a {
 }
 .main-container h2 {
   padding: 0px 30px;
-  font-size: var(--font-laarge);
+  font-size: var(--font-large);
   color: aliceblue;
 }
 .main-container-button {
@@ -199,4 +199,79 @@ footer {
 footer p {
   color: white;
   margin-top: 30px;
+}
+
+/*Sección de BLOG.html  */
+.blogpost-img-container {
+  padding: 0 50px 40px;
+}
+.blogpost-img-container img {
+  width: 100%;
+}
+.blogpost-main-container {
+  padding: 0 50px 40px;
+}
+.blogpost-main-container h3 {
+  border-bottom: 1px solid var(--color-secondary);
+  padding-bottom: 20px;
+  text-align: initial;
+}
+.blogpost-main-container article h1 {
+  font-size: var(--font-medium);
+  text-align: initial;
+}
+.blogpost-main-container article p {
+  text-align: justify;
+}
+/* Estilos para la sección CONTACT */
+.contact-main-container {
+  width: 100%;
+  min-height: 250px;
+  background-color: #e6e9ed;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.contact-main-container div {
+  display: inline-block;
+  width: 49.5%;
+  height: 100%;
+}
+.contact-main-container div a {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+.contact-main-container .contact-left,
+.contact-right {
+  text-align: initial;
+  margin-top: 85px;
+}
+.contact-main-container img {
+  width: 100px;
+}
+
+/* Estilos para  PERFIL.HTML */
+.profile-main-container {
+  padding: 70px 40px;
+  background-color: var(--color-secondary);
+  margin-bottom: 50px;
+}
+.profile-main-container img {
+  width: 320px;
+  margin-right: 30px;
+}
+.profile-main-container .profile-container {
+  display: flex;
+  text-align: initial;
+}
+.profile-main-proyects {
+  padding: 0 50px 40px;
+}
+.profile-main-proyects h3 {
+  border-bottom: 1px solid var(--color-secondary);
+  padding-bottom: 35px;
+  text-align: center;
+}
+.proyects-main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
