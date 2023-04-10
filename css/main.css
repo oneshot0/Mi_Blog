@@ -256,8 +256,10 @@ footer p {
   margin-bottom: 50px;
 }
 .profile-main-container img {
-  width: 320px;
+  width: 260px;
+  height: 300px;
   margin-right: 30px;
+  border-radius: 100%;
 }
 .profile-main-container .profile-container {
   display: flex;
@@ -273,5 +275,25 @@ footer p {
 }
 .proyects-main-container {
   display: grid;
+  text-align: initial;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.proyect-container {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 0 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(89, 73, 30, 0.56);
+}
+.proyect-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.proyect-container div > img {
+  width: 100%;
 }
